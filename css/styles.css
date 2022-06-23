@@ -1,13 +1,53 @@
 /* CSS-змінні */
 :root{
     --title-color:#FFFFFF;
-    --button-color:#2196F3;
     --subtitles-color:#212121;
     --paragraphs-color:#757575;
-    --backgroundfh-color:#2F303A;
+    --backgroundbutton-color: #2196F3;
+    --backgroundhf-color:#2F303A;
+    --backgroundbody-color:#FFFFFF;
+    --backgroundphoto-color:##F5F4FA;
 }
 
+/* Body */
 body {
+    background-color: var(--backgroundbody-color);
+    color: var(--subtitles-color);
+
     font-family: 'Roboto';
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Фон header та footer*/
+.herro, 
+.footer {
+    background-color: var(--backgroundhf-color);
+}
+
+/* Колір шрифта навігації та контактів header */
+.nav-link,
+.contact-link {
+    color: var(--subtitles-color);
+}
+
+.nav-link:hover, 
+.nav-link:focus, 
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--backgroundbutton-color);
+}
+.nav-link.current {
+    color: var(--backgroundbutton-color);
+}
+
+/* Колір та фон кнопок */
+.herro-btn,
+.btn-filter-button {
+    color: var(--title-color);
+    background-color: var(--backgroundbutton-color);
 }
