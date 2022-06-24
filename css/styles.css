@@ -6,7 +6,7 @@
     --backgroundbutton-color: #2196F3;
     --backgroundhf-color:#2F303A;
     --backgroundbody-color:#FFFFFF;
-    --backgroundphoto-color:##F5F4FA;
+    --backgroundphoto-color:#F5F4FA;
 }
 
 /* Body */
@@ -14,25 +14,61 @@ body {
     background-color: var(--backgroundbody-color);
     color: var(--subtitles-color);
 
-    font-family: 'Roboto';
-    font-weight: 400;
+    font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
 
-ul{
+.nopoint {
     list-style: none;
 }
 
-/* Фон header та footer*/
+/* Фон herro та footer*/
 .herro, 
 .footer {
     background-color: var(--backgroundhf-color);
+}
+
+/* Фон Workers */
+.workers {
+    background-color: var(--backgroundphoto-color);
+}
+
+/* Колір та шрифт логотипу */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    color: var(--backgroundbutton-color);
+}
+.logo-color {
+    color: #000000;
+}
+
+.footer .logo-color {
+    color: var(--title-color);
 }
 
 /* Колір шрифта навігації та контактів header */
 .nav-link,
 .contact-link {
     color: var(--subtitles-color);
+    
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.contact-link{
+    color: var(--paragraphs-color);
+}
+
+.footer .contact-link{
+    font-weight: 400;
 }
 
 .nav-link:hover, 
@@ -45,9 +81,99 @@ ul{
     color: var(--backgroundbutton-color);
 }
 
+/* Herro */
+.herro-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
 /* Колір та фон кнопок */
 .herro-btn,
 .btn-filter-button {
-    color: var(--title-color);
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+}
+
+.herro-btn {
     background-color: var(--backgroundbutton-color);
+    color: var(--backgroundbody-color);
+}
+
+.herro-btn:hover, 
+.herro-btn:focus {
+    background-color: var(--backgroundphoto-color);
+    color: var(--subtitles-color);
+}
+
+.btn-filter-button {
+    background-color: var(--backgroundphoto-color);
+    color: var(--subtitles-color);
+}
+
+.btn-filter-button:hover,
+.btn-filter-button:focus {
+    background-color: var(--backgroundbutton-color);
+    color: var(--backgroundbody-color);
+}
+
+/* Titles */
+.aside-title, 
+.about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Subtitle */
+.aside-subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+}
+
+.wokers-subtitle {
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 700;
+}
+
+.project-subtitle {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+/* Desc(Text) */
+.aside-desc {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--paragraphs-color);
+}
+
+.workers-desc {
+    line-height: 1.19;
+    
+    color: var(--paragraphs-color);
+}
+
+.project-desc {
+    line-height: 1.88;
+
+    color: var(--paragraphs-color);
+}
+
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    
+    color: var(--title-color);
 }
