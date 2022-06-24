@@ -38,7 +38,7 @@ body {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-decoration: none;
 
     color: var(--backgroundbutton-color);
@@ -61,6 +61,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contact-link{
@@ -69,6 +70,7 @@ body {
 
 .footer .contact-link{
     font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 .nav-link:hover, 
@@ -102,6 +104,11 @@ body {
 .herro-btn {
     background-color: var(--backgroundbutton-color);
     color: var(--backgroundbody-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
 .herro-btn:hover, 
@@ -113,6 +120,10 @@ body {
 .btn-filter-button {
     background-color: var(--backgroundphoto-color);
     color: var(--subtitles-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
 }
 
 .btn-filter-button:hover,
@@ -123,7 +134,8 @@ body {
 
 /* Titles */
 .aside-title, 
-.about-title {
+.about-title,
+.workers-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -134,13 +146,14 @@ body {
 .aside-subtitle {
     font-size: 14px;
     line-height: 1.14;
-    font-weight: 700;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-.wokers-subtitle {
+.workers-subtitle {
     font-size: 16px;
     line-height: 1.19;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .project-subtitle {
@@ -174,6 +187,6 @@ body {
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    
+
     color: var(--title-color);
 }
